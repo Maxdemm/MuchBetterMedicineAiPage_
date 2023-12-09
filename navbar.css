@@ -1,0 +1,39 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding: var(--scroll-padding, 5rem);
+  }
+  
+  .primary-navigation {
+    
+    position: sticky;
+    top: 0;
+    background-color:cadetblue;
+    z-index: 1000;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    list-style: none;
+  }
+  
+  .nav-list a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .nav-list a:hover {
+    color: darkslategrey;
+  }
+  @media (max-width: 1000px) {
+    .nav-list {
+      gap: 1rem;
+    }
+    .nav-list a {
+      font-size: 1.2rem;
+    }
+  }
